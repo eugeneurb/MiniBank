@@ -1,0 +1,10 @@
+[INFO]  [class Main]  [2022-11-21T19:29:22.043] Cute into message
+[INFO]  [class Main]  [2022-11-21T19:31:49.819] Cute into message
+[DEBUG]  [class Main]  [2022-11-21T19:31:49.820] Cute debug message
+[WARN]  [class Main]  [2022-11-21T19:31:49.820] Cute warn message
+[INFO]  [class Main]  [2022-11-21T19:31:55.393] Cute into message
+[DEBUG]  [class Main]  [2022-11-21T19:31:55.394] Cute debug message
+[WARN]  [class Main]  [2022-11-21T19:31:55.394] Cute warn message
+[INFO]  [class Main]  [2022-11-21T19:33:49.898] Cute into message
+[DEBUG]  [class Main]  [2022-11-21T19:33:49.899] Cute debug message
+[WARN]  [class Main]  [2022-11-21T19:33:49.900] Cute warn message
