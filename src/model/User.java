@@ -13,7 +13,7 @@ public class User {
     private Sex sex;
     private String email;
 
-    public User() {
+    public User(String userName, String password, String firstName, String lastName, LocalDate parse, DateTimeFormatter isoLocalDate, Sex sex, String email) {
     }
 
     public User(String userName, String password, String firstName, String lastName, LocalDate birthDate, Sex sex,
@@ -27,8 +27,7 @@ public class User {
         this.email = email;
     }
 
-    public User(Long id, String userName, String password, String firstName, String lastName, LocalDate birthDate,
-                Sex sex, String email) {
+    public User() {
         this.id = id;
         this.userName = userName;
         this.password = password;

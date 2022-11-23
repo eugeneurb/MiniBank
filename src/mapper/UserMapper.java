@@ -2,13 +2,14 @@ package mapper;
 
 import model.Sex;
 import model.User;
+import service.validation.UserValidationRequest;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class UserMapper {
 
-    public static String toCsv (final User user){
+    public static String toCsv(final User user) {
         StringBuilder sb = new StringBuilder();
         sb.append(user.getId()).append(", ");
         sb.append(user.getUserName()).append(", ");
@@ -22,8 +23,8 @@ public class UserMapper {
         return sb.toString();
     }
 
-    public static User toObject(final String csv){
-        String[] strings =csv.split(",");
+    public static User toObject(final String csv) {
+        String[] strings = csv.split(",");
         int i = 0;
         User user = new User();
         user.setId(java.lang.Long.parseLong(strings[i++]));
@@ -36,5 +37,15 @@ public class UserMapper {
         user.setEmail(strings[i++]);
         return user;
 
+    }
+
+    public static User toObject(UserValidationRequest request) {
+        return new User(request.getUserName(),
+                request.getPassword(),
+                request.getFirstName(),
+                request.getLastName(),
+                LocalDate.parse(request.getBirthDate()), DateTimeFormatter.ISO_LOCAL_DATE,
+                Sex.valueOf(request.getSex()),
+                request.getEmail());
     }
 }

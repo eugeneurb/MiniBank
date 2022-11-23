@@ -1,5 +1,6 @@
 package service;
 
+import mapper.UserMapper;
 import model.User;
 import repository.UserRepository;
 import repository.impl.FileUserRepository;
@@ -46,5 +47,9 @@ public class UserService {
             return UserValidator.validate(request);
 
         }
+    }
+
+    public User create(UserValidationRequest request) {
+        return userRepository.save(UserMapper.toObject(request));
     }
 }

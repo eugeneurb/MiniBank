@@ -66,6 +66,16 @@ public class ConsoleInterface {
                     UserValidationRequest request = new UserValidationRequest(userName, password, firstName, lastName,
                             birthDay,sex,email);
                     UserValidationRequest result = userService.validate(request);
+
+                    if (result.isSucces()){
+                        User user = userService.create(request);
+                        Session.createSession(user);
+                        System.out.println("Добро пожаловать в систему, %s \n",+ user.getFirstName());
+                        return;
+                    }else{
+                        System.out.println("Ошибка при создании пользователя. \n"+ result.getValidationMessage());
+                        continue;
+                    }
                 }
                 case 0: {
                     throw new ExitAppException();
