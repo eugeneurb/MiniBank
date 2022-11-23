@@ -8,3 +8,12 @@
 [INFO]  [class Main]  [2022-11-21T19:33:49.898] Cute into message
 [DEBUG]  [class Main]  [2022-11-21T19:33:49.899] Cute debug message
 [WARN]  [class Main]  [2022-11-21T19:33:49.900] Cute warn message
+[DEBUG]  [class repository.impl.FileUserRepository]  [2022-11-23T19:23:08.790] Created UserIdCounter with initial value: 1
+[DEBUG]  [class repository.impl.FileUserRepository]  [2022-11-23T19:23:42.873] Created UserIdCounter with initial value: 1
+[DEBUG]  [class repository.impl.FileUserRepository]  [2022-11-23T19:24:45.764] Created UserIdCounter with initial value: 1
+[DEBUG]  [class repository.impl.FileUserRepository]  [2022-11-23T19:25:46.331] Created UserIdCounter with initial value: 1
+[INFO]  [class UI.Session]  [2022-11-23T19:25:53.379] Сщздана сессия с %sroot
+[INFO]  [class UI.ConsoleInterface]  [2022-11-23T19:25:53.380] Успешный вход для %sroot
+[DEBUG]  [class repository.impl.FileUserRepository]  [2022-11-23T19:27:09.075] Created UserIdCounter with initial value: 1
+[INFO]  [class UI.Session]  [2022-11-23T19:27:16.400] Сщздана сессия с %sroot
+[INFO]  [class UI.ConsoleInterface]  [2022-11-23T19:27:16.400] Успешный вход для %sroot

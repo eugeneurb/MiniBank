@@ -32,7 +32,7 @@ public class UserMapper {
         user.setFirstName(strings[i++]);
         user.setLastName(strings[i++]);
         user.setBirthDate(LocalDate.parse(strings[i++]), DateTimeFormatter.ISO_LOCAL_DATE);
-        user.setSex(Sex.valueOf(strings[i++]);
+        user.setSex(Sex.valueOf(strings[i++]));
         user.setEmail(strings[i++]);
         return user;
 
